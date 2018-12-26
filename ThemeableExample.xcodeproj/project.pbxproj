@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C240D6F20716814006E2A03 /* Night Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C240D6F20716814006E2A03 /* ThemeableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C240D7220716814006E2A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C240D7420716814006E2A03 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		4C240D7620716814006E2A03 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		4C240D6620716814006E2A03 = {
 			isa = PBXGroup;
 			children = (
-				4C240D7120716814006E2A03 /* Night Mode */,
+				4C240D7120716814006E2A03 /* ThemeableExample */,
 				4C240D7020716814006E2A03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,12 +64,12 @@
 		4C240D7020716814006E2A03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C240D6F20716814006E2A03 /* Night Mode.app */,
+				4C240D6F20716814006E2A03 /* ThemeableExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C240D7120716814006E2A03 /* Night Mode */ = {
+		4C240D7120716814006E2A03 /* ThemeableExample */ = {
 			isa = PBXGroup;
 			children = (
 				4C240D7220716814006E2A03 /* AppDelegate.swift */,
@@ -82,7 +82,7 @@
 				4C240D7B20716814006E2A03 /* Assets.xcassets */,
 				4C240D7D20716814006E2A03 /* LaunchScreen.storyboard */,
 			);
-			path = "Night Mode";
+			path = ThemeableExample;
 			sourceTree = "<group>";
 		};
 		4C240D9620717BE6006E2A03 /* View Controllers */ = {
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C240D6E20716814006E2A03 /* Night Mode */ = {
+		4C240D6E20716814006E2A03 /* ThemeableExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C240D8320716814006E2A03 /* Build configuration list for PBXNativeTarget "Night Mode" */;
+			buildConfigurationList = 4C240D8320716814006E2A03 /* Build configuration list for PBXNativeTarget "ThemeableExample" */;
 			buildPhases = (
 				4C240D6B20716814006E2A03 /* Sources */,
 				4C240D6C20716814006E2A03 /* Frameworks */,
@@ -138,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = "Night Mode";
+			name = ThemeableExample;
 			productName = "Night Mode";
-			productReference = 4C240D6F20716814006E2A03 /* Night Mode.app */;
+			productReference = 4C240D6F20716814006E2A03 /* ThemeableExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,16 +150,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Late Night Swift";
 				TargetAttributes = {
 					4C240D6E20716814006E2A03 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 4C240D6A20716814006E2A03 /* Build configuration list for PBXProject "Night Mode" */;
+			buildConfigurationList = 4C240D6A20716814006E2A03 /* Build configuration list for PBXProject "ThemeableExample" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C240D6E20716814006E2A03 /* Night Mode */,
+				4C240D6E20716814006E2A03 /* ThemeableExample */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +246,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -252,6 +254,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -302,6 +305,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -309,6 +313,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -343,11 +348,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Night Mode/Info.plist";
+				DEVELOPMENT_TEAM = S7TJSJXWUZ;
+				INFOPLIST_FILE = "$(SRCROOT)/ThemeableExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.latenightswift.Night-Mode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tortugapower.ThemeableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -357,11 +363,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Night Mode/Info.plist";
+				DEVELOPMENT_TEAM = S7TJSJXWUZ;
+				INFOPLIST_FILE = "$(SRCROOT)/ThemeableExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.latenightswift.Night-Mode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tortugapower.ThemeableExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -369,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C240D6A20716814006E2A03 /* Build configuration list for PBXProject "Night Mode" */ = {
+		4C240D6A20716814006E2A03 /* Build configuration list for PBXProject "ThemeableExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C240D8120716814006E2A03 /* Debug */,
@@ -378,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C240D8320716814006E2A03 /* Build configuration list for PBXNativeTarget "Night Mode" */ = {
+		4C240D8320716814006E2A03 /* Build configuration list for PBXNativeTarget "ThemeableExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C240D8420716814006E2A03 /* Debug */,
