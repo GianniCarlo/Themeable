@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Themeable
 
 final class AppThemeProvider: ThemeProvider {
 	static let shared: AppThemeProvider = .init()
@@ -52,7 +53,7 @@ final class AppThemeProvider: ThemeProvider {
 	}
 }
 
-extension Themed where Self: AnyObject {
+extension Themeable where Self: AnyObject {
 	var themeProvider: AppThemeProvider {
 		return AppThemeProvider.shared
 	}

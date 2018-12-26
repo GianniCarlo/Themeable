@@ -10,12 +10,12 @@ import Foundation
 
 /// Stores a value of type T, and allows objects to subscribe to
 /// be notified with this value is changed.
-struct SubscribableValue<T> {
+public struct SubscribableValue<T> {
 	private typealias Subscription = (object: Weak<AnyObject>, handler: (T) -> Void)
 
 	private var subscriptions: [Subscription] = []
 
-	var value: T {
+	public var value: T {
 		didSet {
 			for (object, handler) in subscriptions where object.value != nil {
 				handler(value)
@@ -23,11 +23,11 @@ struct SubscribableValue<T> {
 		}
 	}
 
-	init(value: T) {
+	public init(value: T) {
 		self.value = value
 	}
 
-	mutating func subscribe(_ object: AnyObject, using handler: @escaping (T) -> Void) {
+	public mutating func subscribe(_ object: AnyObject, using handler: @escaping (T) -> Void) {
 		subscriptions.append((Weak(value: object), handler))
 		cleanupSubscriptions()
 	}

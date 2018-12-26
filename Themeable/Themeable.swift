@@ -10,7 +10,7 @@ import Foundation
 
 /// Describes a type that holds a current `Theme` and allows
 /// an object to be notified when the theme is changed.
-protocol ThemeProvider {
+public protocol ThemeProvider {
 	/// Placeholder for the theme type that the app will use
 	associatedtype Theme
 
@@ -23,7 +23,7 @@ protocol ThemeProvider {
 }
 
 /// Describes a type that can have a theme applied to it
-protocol Themed {
+public protocol Themeable {
 	/// A Themed type needs to know about what concrete type the
 	/// ThemeProvider is. So we don't clash with the protocol,
 	/// let's call this associated type _ThemeProvider
@@ -36,11 +36,11 @@ protocol Themed {
 	func applyTheme(_ theme: _ThemeProvider.Theme)
 }
 
-extension Themed where Self: AnyObject {
+extension Themeable where Self: AnyObject {
 	/// This is to be called once when Self wants to start listening for
 	/// theme changes. This immediately triggers `applyTheme()` with the
 	/// current theme.
-	func setUpTheming() {
+	public func setUpTheming() {
 		applyTheme(themeProvider.currentTheme)
 		themeProvider.subscribeToChanges(self) { [weak self] newTheme in
 			self?.applyTheme(newTheme)

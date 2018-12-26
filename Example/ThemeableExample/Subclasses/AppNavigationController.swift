@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Themeable
 
 class AppNavigationController: UINavigationController {
 	private var themedStatusBarStyle: UIStatusBarStyle?
@@ -21,7 +22,7 @@ class AppNavigationController: UINavigationController {
 	}
 }
 
-extension AppNavigationController: Themed {
+extension AppNavigationController: Themeable {
 	func applyTheme(_ theme: AppTheme) {
 		themedStatusBarStyle = theme.statusBarStyle
 		setNeedsStatusBarAppearanceUpdate()

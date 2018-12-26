@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Night Mode
 //
 //  Created by Michael on 01/04/2018.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Themeable
 
-class FirstViewController: UIViewController {
+class SecondViewController: UIViewController {
 	@IBOutlet private var titleLabel: UILabel!
 	@IBOutlet private var subtitleLabel: UILabel!
 
@@ -22,7 +23,7 @@ class FirstViewController: UIViewController {
 	}
 }
 
-extension FirstViewController: Themed {
+extension SecondViewController: Themeable {
 	func applyTheme(_ theme: AppTheme) {
 		view.backgroundColor = theme.backgroundColor
 		titleLabel.textColor = theme.textColor

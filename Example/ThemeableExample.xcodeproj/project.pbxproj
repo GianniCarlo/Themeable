@@ -7,23 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B2A69E21D3171B00917584 /* Themeable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B2A69721D3164A00917584 /* Themeable.framework */; };
+		41B2A69F21D3171B00917584 /* Themeable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41B2A69721D3164A00917584 /* Themeable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4C240D7320716814006E2A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D7220716814006E2A03 /* AppDelegate.swift */; };
 		4C240D7520716814006E2A03 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D7420716814006E2A03 /* FirstViewController.swift */; };
 		4C240D7720716814006E2A03 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D7620716814006E2A03 /* SecondViewController.swift */; };
 		4C240D7A20716814006E2A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C240D7820716814006E2A03 /* Main.storyboard */; };
 		4C240D7C20716814006E2A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C240D7B20716814006E2A03 /* Assets.xcassets */; };
 		4C240D7F20716814006E2A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C240D7D20716814006E2A03 /* LaunchScreen.storyboard */; };
-		4C240D88207168BA006E2A03 /* Theming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D87207168BA006E2A03 /* Theming.swift */; };
-		4C240D8B20716A08006E2A03 /* SubscribableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D8A20716A08006E2A03 /* SubscribableValue.swift */; };
 		4C240D8D20716A45006E2A03 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D8C20716A45006E2A03 /* AppTheme.swift */; };
 		4C240D8F20716A63006E2A03 /* AppThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D8E20716A63006E2A03 /* AppThemeProvider.swift */; };
 		4C240D912071773B006E2A03 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D902071773B006E2A03 /* AppNavigationController.swift */; };
 		4C240D93207177C0006E2A03 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D92207177C0006E2A03 /* AppTabBarController.swift */; };
 		4C240D9520717944006E2A03 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D9420717944006E2A03 /* ArrayExtensions.swift */; };
-		4C240D9B20717FE4006E2A03 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C240D9A20717FE4006E2A03 /* Weak.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41B2A69621D3164A00917584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B2A69121D3164A00917584 /* Themeable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41B2A67721D3155200917584;
+			remoteInfo = Themeable;
+		};
+		41B2A69821D3164A00917584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B2A69121D3164A00917584 /* Themeable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41B2A68021D3155200917584;
+			remoteInfo = ThemeableTests;
+		};
+		41B2A6A021D3171B00917584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41B2A69121D3164A00917584 /* Themeable.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 41B2A67621D3155200917584;
+			remoteInfo = Themeable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41B2A6A221D3171B00917584 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41B2A69F21D3171B00917584 /* Themeable.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		41B2A69121D3164A00917584 /* Themeable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Themeable.xcodeproj; path = ../Themeable.xcodeproj; sourceTree = "<group>"; };
 		4C240D6F20716814006E2A03 /* ThemeableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C240D7220716814006E2A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C240D7420716814006E2A03 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -32,14 +70,11 @@
 		4C240D7B20716814006E2A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C240D7E20716814006E2A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C240D8020716814006E2A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C240D87207168BA006E2A03 /* Theming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theming.swift; sourceTree = "<group>"; };
-		4C240D8A20716A08006E2A03 /* SubscribableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribableValue.swift; sourceTree = "<group>"; };
 		4C240D8C20716A45006E2A03 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		4C240D8E20716A63006E2A03 /* AppThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppThemeProvider.swift; sourceTree = "<group>"; };
 		4C240D902071773B006E2A03 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		4C240D92207177C0006E2A03 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		4C240D9420717944006E2A03 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
-		4C240D9A20717FE4006E2A03 /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B2A69E21D3171B00917584 /* Themeable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41B2A69221D3164A00917584 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B2A69721D3164A00917584 /* Themeable.framework */,
+				41B2A69921D3164A00917584 /* ThemeableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B2A69C21D3171100917584 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C240D6620716814006E2A03 = {
 			isa = PBXGroup;
 			children = (
 				4C240D7120716814006E2A03 /* ThemeableExample */,
 				4C240D7020716814006E2A03 /* Products */,
+				41B2A69121D3164A00917584 /* Themeable.xcodeproj */,
+				41B2A69C21D3171100917584 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				4C240D9420717944006E2A03 /* ArrayExtensions.swift */,
-				4C240D9A20717FE4006E2A03 /* Weak.swift */,
-				4C240D8A20716A08006E2A03 /* SubscribableValue.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -107,7 +159,6 @@
 		4C240D9820717C00006E2A03 /* Theming */ = {
 			isa = PBXGroup;
 			children = (
-				4C240D87207168BA006E2A03 /* Theming.swift */,
 				4C240D8C20716A45006E2A03 /* AppTheme.swift */,
 				4C240D8E20716A63006E2A03 /* AppThemeProvider.swift */,
 			);
@@ -133,10 +184,12 @@
 				4C240D6B20716814006E2A03 /* Sources */,
 				4C240D6C20716814006E2A03 /* Frameworks */,
 				4C240D6D20716814006E2A03 /* Resources */,
+				41B2A6A221D3171B00917584 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				41B2A6A121D3171B00917584 /* PBXTargetDependency */,
 			);
 			name = ThemeableExample;
 			productName = "Night Mode";
@@ -171,12 +224,35 @@
 			mainGroup = 4C240D6620716814006E2A03;
 			productRefGroup = 4C240D7020716814006E2A03 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 41B2A69221D3164A00917584 /* Products */;
+					ProjectRef = 41B2A69121D3164A00917584 /* Themeable.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C240D6E20716814006E2A03 /* ThemeableExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		41B2A69721D3164A00917584 /* Themeable.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Themeable.framework;
+			remoteRef = 41B2A69621D3164A00917584 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		41B2A69921D3164A00917584 /* ThemeableTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ThemeableTests.xctest;
+			remoteRef = 41B2A69821D3164A00917584 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C240D6D20716814006E2A03 /* Resources */ = {
@@ -199,18 +275,23 @@
 				4C240D8F20716A63006E2A03 /* AppThemeProvider.swift in Sources */,
 				4C240D9520717944006E2A03 /* ArrayExtensions.swift in Sources */,
 				4C240D7720716814006E2A03 /* SecondViewController.swift in Sources */,
-				4C240D88207168BA006E2A03 /* Theming.swift in Sources */,
 				4C240D7320716814006E2A03 /* AppDelegate.swift in Sources */,
-				4C240D9B20717FE4006E2A03 /* Weak.swift in Sources */,
 				4C240D8D20716A45006E2A03 /* AppTheme.swift in Sources */,
 				4C240D912071773B006E2A03 /* AppNavigationController.swift in Sources */,
 				4C240D93207177C0006E2A03 /* AppTabBarController.swift in Sources */,
-				4C240D8B20716A08006E2A03 /* SubscribableValue.swift in Sources */,
 				4C240D7520716814006E2A03 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41B2A6A121D3171B00917584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Themeable;
+			targetProxy = 41B2A6A021D3171B00917584 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C240D7820716814006E2A03 /* Main.storyboard */ = {
@@ -346,6 +427,7 @@
 		4C240D8420716814006E2A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7TJSJXWUZ;
@@ -361,6 +443,7 @@
 		4C240D8520716814006E2A03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7TJSJXWUZ;

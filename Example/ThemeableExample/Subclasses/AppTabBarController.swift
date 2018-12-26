@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Themeable
 
 class AppTabBarController: UITabBarController {
 	override func viewDidLoad() {
@@ -15,7 +16,7 @@ class AppTabBarController: UITabBarController {
 	}
 }
 
-extension AppTabBarController: Themed {
+extension AppTabBarController: Themeable {
 	func applyTheme(_ theme: AppTheme) {
 		tabBar.barTintColor = theme.barBackgroundColor
 		tabBar.tintColor = theme.barForegroundColor
