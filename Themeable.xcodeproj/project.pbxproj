@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		41B2A67721D3155200917584 /* Themeable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Themeable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B2A67A21D3155200917584 /* Themeable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Themeable.h; sourceTree = "<group>"; };
-		41B2A67B21D3155200917584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B2A67B21D3155200917584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		41B2A68021D3155200917584 /* ThemeableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B2A68521D3155200917584 /* ThemeableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeableTests.swift; sourceTree = "<group>"; };
 		41B2A68721D3155200917584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +83,8 @@
 				41B2A6A421D31E2100917584 /* SubscribableValue.swift */,
 				41B2A67B21D3155200917584 /* Info.plist */,
 			);
-			path = Themeable;
+			name = Themeable;
+			path = Sources/Themeable;
 			sourceTree = "<group>";
 		};
 		41B2A68421D3155200917584 /* ThemeableTests */ = {
@@ -92,7 +93,8 @@
 				41B2A68521D3155200917584 /* ThemeableTests.swift */,
 				41B2A68721D3155200917584 /* Info.plist */,
 			);
-			path = ThemeableTests;
+			name = ThemeableTests;
+			path = Tests/ThemeableTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +362,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Themeable/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,7 +373,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tortugapower.Themeable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,7 +388,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Themeable/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,7 +399,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tortugapower.Themeable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -408,7 +410,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7TJSJXWUZ;
-				INFOPLIST_FILE = ThemeableTests/Info.plist;
+				INFOPLIST_FILE = Tests/ThemeableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,7 +429,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7TJSJXWUZ;
-				INFOPLIST_FILE = ThemeableTests/Info.plist;
+				INFOPLIST_FILE = Tests/ThemeableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

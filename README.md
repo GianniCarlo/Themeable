@@ -22,6 +22,18 @@ github "GianniCarlo/Themeable" ~> 1.0.0
 
 Run `carthage update` to build the framework and drag the built `Themeable.framework` into your Xcode project.
 
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+
+Once you have your Swift package set up, adding DirectoryWatcher as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+	.package(url: "https://github.com/GianniCarlo/Themeable.git", .upToNextMajor(from: "1.1.0"))
+]
+```
+
 ## Usage
 
 - Provide a theme manager that conforms to the protocol `ThemeProvider`.
