@@ -17,16 +17,20 @@ class FirstViewController: UIViewController {
 		super.viewDidLoad()
 		setUpTheming()
 	}
-
+    
+    @IBAction func toggleDarkMode(_ sender: UIBarButtonItem) {
+        themeProvider.useDarkMode = !themeProvider.useDarkMode
+    }
+    
 	@IBAction func toggleThemeActionTriggered() {
 		themeProvider.nextTheme()
 	}
 }
 
 extension FirstViewController: Themeable {
-	func applyTheme(_ theme: AppTheme) {
-		view.backgroundColor = theme.backgroundColor
-		titleLabel.textColor = theme.textColor
-		subtitleLabel.textColor = theme.textColor
+	func applyTheme(_ theme: Theme) {
+		view.backgroundColor = theme.systemBackground
+		titleLabel.textColor = theme.label
+		subtitleLabel.textColor = theme.secondaryLabel
 	}
 }

@@ -12,10 +12,10 @@ import Themeable
 final class AppThemeProvider: ThemeProvider {
 	static let shared: AppThemeProvider = .init()
 
-	private var theme: SubscribableValue<AppTheme>
-	private var availableThemes: [AppTheme] = [.light, .dark]
+	private var theme: SubscribableValue<Theme>
+	private var availableThemes: [Theme] = [.ayu, .sky]
 
-	var currentTheme: AppTheme {
+	var currentTheme: Theme {
 		get {
 			return theme.value
 		}
@@ -23,12 +23,20 @@ final class AppThemeProvider: ThemeProvider {
 			setNewTheme(newValue)
 		}
 	}
+    
+    var useDarkMode: Bool {
+        didSet {
+            self.setNewTheme(self.currentTheme)
+        }
+    }
 
 	init() {
-		theme = SubscribableValue<AppTheme>(value: .light)
+		theme = SubscribableValue<Theme>(value: .ayu)
+        useDarkMode = false
 	}
 
-	private func setNewTheme(_ newTheme: AppTheme) {
+	private func setNewTheme(_ newTheme: Theme) {
+        newTheme.useDarkMode = self.useDarkMode
 		let window = UIApplication.shared.delegate!.window!!
 		UIView.transition(
 			with: window,
@@ -41,7 +49,7 @@ final class AppThemeProvider: ThemeProvider {
 		)
 	}
 
-	func subscribeToChanges(_ object: AnyObject, handler: @escaping (AppTheme) -> Void) {
+	func subscribeToChanges(_ object: AnyObject, handler: @escaping (Theme) -> Void) {
 		theme.subscribe(object, using: handler)
 	}
 

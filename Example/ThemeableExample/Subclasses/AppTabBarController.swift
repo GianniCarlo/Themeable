@@ -17,8 +17,8 @@ class AppTabBarController: UITabBarController {
 }
 
 extension AppTabBarController: Themeable {
-	func applyTheme(_ theme: AppTheme) {
-		tabBar.barTintColor = theme.barBackgroundColor
-		tabBar.tintColor = theme.barForegroundColor
+	func applyTheme(_ theme: Theme) {
+		tabBar.barTintColor = theme.secondarySystemBackground
+		tabBar.tintColor = theme.link
 	}
 }
